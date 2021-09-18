@@ -148,3 +148,112 @@ INSERT INTO [dbo].[EnemySpies]
 		 CAST('CB919AB3-DACB-4A44-8478-C80A1C4C7CED' AS UNIQUEIDENTIFIER))
 
 
+
+INSERT INTO [dbo].[SpyServices]
+           ([SpyID]
+           ,[Service])
+     VALUES
+	 --Boris services list
+        (CAST('1299B5B0-F566-411C-8865-CCD53F1DFE88' AS UNIQUEIDENTIFIER),
+		 'Espionage'),
+        (CAST('1299B5B0-F566-411C-8865-CCD53F1DFE88' AS UNIQUEIDENTIFIER),
+		 'Political take-over'),
+	--John services list
+	    (CAST('08609402-7B18-4FBB-8216-BA0338718A70' AS UNIQUEIDENTIFIER),
+		 'Non-Covert Actions'),
+        (CAST('08609402-7B18-4FBB-8216-BA0338718A70' AS UNIQUEIDENTIFIER),
+		 'Inadvertently starting a nuclear standoff'),
+	--Alex services list
+		(CAST('97541695-F2BC-40A8-813B-6107FACE8CE5' AS UNIQUEIDENTIFIER),
+		 'Orchestrating internal conflict'),
+        (CAST('97541695-F2BC-40A8-813B-6107FACE8CE5' AS UNIQUEIDENTIFIER),
+		 'Disorganizing internal government agencies'),
+	--Paul services list
+		(CAST('DC684E70-5B47-459A-AD6E-2335604DDEDB' AS UNIQUEIDENTIFIER),
+		'Digging dirt'),
+	--Nate services list
+		(CAST('820249CD-AC48-4F3E-B90D-7D66B6439514' AS UNIQUEIDENTIFIER),
+		 'Espionage'),
+		(CAST('820249CD-AC48-4F3E-B90D-7D66B6439514' AS UNIQUEIDENTIFIER),
+		 'Dumping tea in the Boston Harbor'),
+	--Ben services list
+		(CAST('CB919AB3-DACB-4A44-8478-C80A1C4C7CED' AS UNIQUEIDENTIFIER),
+		 'Winter Soldier'),
+    --James services list
+		(CAST('294CBB20-9553-4EE1-AE02-88C895ABA429' AS UNIQUEIDENTIFIER),
+		 'Inadvertently crashing geopolitical organizations')
+
+SELECT *
+FROM SpyServices
+
+
+INSERT INTO [dbo].[SpySkills]
+           ([SpyID]
+           ,[Skill])
+     VALUES
+	 --Boris skill list
+        (CAST('1299B5B0-F566-411C-8865-CCD53F1DFE88' AS UNIQUEIDENTIFIER),
+		 'Spying'),
+        (CAST('1299B5B0-F566-411C-8865-CCD53F1DFE88' AS UNIQUEIDENTIFIER),
+		 'Plotting'),
+	--John skill list
+	    (CAST('08609402-7B18-4FBB-8216-BA0338718A70' AS UNIQUEIDENTIFIER),
+		 'Spying'),
+        (CAST('08609402-7B18-4FBB-8216-BA0338718A70' AS UNIQUEIDENTIFIER),
+		 'Failing'),
+	--Alex skill list
+		(CAST('97541695-F2BC-40A8-813B-6107FACE8CE5' AS UNIQUEIDENTIFIER),
+		 'Spying'),
+        (CAST('97541695-F2BC-40A8-813B-6107FACE8CE5' AS UNIQUEIDENTIFIER),
+		 'Double-Agent'),
+	--Paul skill list
+		(CAST('DC684E70-5B47-459A-AD6E-2335604DDEDB' AS UNIQUEIDENTIFIER),
+		'None'),
+	--Nate skill list
+		(CAST('820249CD-AC48-4F3E-B90D-7D66B6439514' AS UNIQUEIDENTIFIER),
+		 'Spying'),
+		(CAST('820249CD-AC48-4F3E-B90D-7D66B6439514' AS UNIQUEIDENTIFIER),
+		 'Demoliton'),
+	--Ben enemy list
+		(CAST('CB919AB3-DACB-4A44-8478-C80A1C4C7CED' AS UNIQUEIDENTIFIER),
+		 'Spying'),
+		(CAST('CB919AB3-DACB-4A44-8478-C80A1C4C7CED' AS UNIQUEIDENTIFIER),
+		'Sleeping'),
+    --James skill list
+		(CAST('294CBB20-9553-4EE1-AE02-88C895ABA429' AS UNIQUEIDENTIFIER),
+		 'Chugging Beer')
+
+SELECT *
+FROM SpySkills
+
+SELECT *
+FROM Posts
+
+
+INSERT INTO [dbo].[Posts]
+           ([SpyID]
+           ,[Services])
+     VALUES
+	 --Boris posts
+        (CAST('1299B5B0-F566-411C-8865-CCD53F1DFE88' AS UNIQUEIDENTIFIER),
+		 'Will match any price for committing espionage.'),
+	--John posts
+	    (CAST('08609402-7B18-4FBB-8216-BA0338718A70' AS UNIQUEIDENTIFIER),
+		 'You won''t find any spy better at creating nuclear standoffs than me.'),
+	--Alex posts
+		(CAST('97541695-F2BC-40A8-813B-6107FACE8CE5' AS UNIQUEIDENTIFIER),
+		 'Infiltrating enemy intelligence organizations is my specialty. Call me.'),
+	--Paul posts
+		(CAST('DC684E70-5B47-459A-AD6E-2335604DDEDB' AS UNIQUEIDENTIFIER),
+		'I dig dirt. Figuratively, not literally. Hire me. Literally.'),
+	--Nate posts
+		(CAST('820249CD-AC48-4F3E-B90D-7D66B6439514' AS UNIQUEIDENTIFIER),
+		 'Need a bomb planted in the vehicle of someone special? I''m the man for the job.'),
+	--Ben posts
+		(CAST('CB919AB3-DACB-4A44-8478-C80A1C4C7CED' AS UNIQUEIDENTIFIER),
+		 'Dumping tea in the Boston Harbor is what I do best.'),
+    --James posts
+		(CAST('294CBB20-9553-4EE1-AE02-88C895ABA429' AS UNIQUEIDENTIFIER),
+		 'I can get you those classified documents you want...or your money back.')
+		   
+
