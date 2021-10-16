@@ -46,7 +46,8 @@ INSERT INTO [dbo].[ITEMS]
 		   ('Light Switch Alarm', 'Calls emergency responders if lights are left on.', 55.72, cast('1239624A-A391-41C5-95B7-4E6345611FFD' as uniqueidentifier)),
 		   ('Sweti Cooler', 'Holds 12 cold ones.', 375.10, cast('868269ED-5701-423E-939B-B45C5BF82FDE' as uniqueidentifier)),
 		   ('Hammer', 'Nail stuff, also opens beer.', 9.99, cast('34F321BD-C905-42A2-88BC-5CFA5698BD1E' as uniqueidentifier)),
+		   ('Drill', 'Perfect for drilling stuff.', 49.99, cast('34F321BD-C905-42A2-88BC-5CFA5698BD1E' as uniqueidentifier)),
 		   ('Drill', 'Perfect for drilling stuff.', 49.99, cast('34F321BD-C905-42A2-88BC-5CFA5698BD1E' as uniqueidentifier))
 
-		   SELECT ItemName, ItemDescription, ItemPrice 
+		   SELECT *
 		   FROM ITEMS
